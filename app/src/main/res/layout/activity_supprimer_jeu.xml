@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_supprimer_jeu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bck"
+    tools:context=".SupprimerJeuActivity">
+
+    <include layout="@layout/tool_bar"></include>
+
+    <Button
+        android:text="supprimer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/supprimer"
+        android:onClick="supprimer"
+        android:clickable="false"
+        android:layout_alignParentBottom="true"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:clickable="true"
+        android:choiceMode="multipleChoice"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/supprimer"
+        android:layout_marginTop="?attr/actionBarSize"/>
+
+</RelativeLayout>

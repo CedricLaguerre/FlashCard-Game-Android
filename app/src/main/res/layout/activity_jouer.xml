@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_afficher_jeu"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/bck"
+tools:context=".JouerActivity">
+
+    <include layout="@layout/tool_bar"></include>
+
+    <Button
+        android:text="jouer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/jouer"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:onClick="jouer" />
+
+    <TextView
+        android:text="Question:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/question"
+        android:layout_below="@+id/jouer"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:id="@+id/reponse"
+        android:hint="votre reponse..."
+        android:layout_below="@+id/question"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Compartiment:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/compartiment"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/valider"
+        android:layout_alignLeft="@+id/question"
+        android:layout_alignStart="@+id/question" />
+
+    <Button
+        android:text="valider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valider"
+        android:onClick="valider"
+        android:layout_marginBottom="88dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/jouer"
+        android:layout_alignStart="@+id/jouer" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:id="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trancoso.flashcard">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icone"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JouerActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ParamActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <provider
+            android:name=".JeuContentProvider"
+            android:authorities="com.example.trancoso.flashcard"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".AjouterJeuActivity"
+            android:parentActivityName=".ParamActivity" />
+        <activity
+            android:name=".AfficherJeuActivity"
+            android:parentActivityName=".AjouterJeuActivity" />
+        <activity
+            android:name=".AjouterCarteActivity"
+            android:parentActivityName=".ParamActivity" />
+        <activity
+            android:name=".AfficherCarteActivity"
+            android:parentActivityName=".ParamActivity" />
+        <activity
+            android:name=".ListeJeuActivity"
+            android:parentActivityName=".ParamActivity" />
+        <activity
+            android:name=".SupprimerJeuActivity"
+            android:parentActivityName=".ParamActivity" />
+
+        <activity android:name=".DownloadManagerActivity" />
+    </application>
+
+</manifest>

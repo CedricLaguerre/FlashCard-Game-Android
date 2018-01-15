@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ajouter_carte"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck"
+    tools:context=".AjouterCarteActivity">
+
+    <include layout="@layout/tool_bar"></include>
+
+    <TextView
+        android:text="SELECTIONNER LE JEU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:text="CARTE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="28dp"
+        android:id="@+id/question"
+        android:hint="Entrez la question"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/textView1"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="28dp"
+        android:id="@+id/reponse"
+        android:hint="Entrez la reponse"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:text="Ajouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ajouter"
+        android:onClick="ajouter"
+        android:layout_below="@+id/reponse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:text="Afficher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/afficher"
+        android:onClick="afficher"
+        android:layout_below="@+id/ajouter"
+        android:layout_alignStart="@+id/ajouter" />
+
+</RelativeLayout>

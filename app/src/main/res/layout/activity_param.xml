@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_parametres"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck"
+    tools:context="ParamActivity">
+
+
+    <include layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <Button
+            android:text="@string/ajouterJeu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ajouterJeu"
+            android:onClick="onClick"/>
+
+        <Button
+            android:text="@string/ajouterCarte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ajouterCarte"
+            android:onClick="onClick"/>
+
+        <Button
+            android:text="@string/afficherJeu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/afficherJeu"
+            android:onClick="onClick"/>
+
+        <Button
+            android:text="@string/supprJeu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/supprimerJeu"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+</RelativeLayout>

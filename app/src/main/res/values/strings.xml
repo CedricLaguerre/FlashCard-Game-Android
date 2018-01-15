@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FlashCard</string>
+    <string name="jouer">Jouer</string>
+    <string name="theme">Thème</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="afficher">Afficher</string>
+    <string name="preferences">Préférences</string>
+    <string name="ajouterJeu">Ajouter Jeu De Cartes</string>
+    <string name="afficherJeu">Afficher Jeux De Cartes</string>
+    <string name="ajouterCarte">Ajouter Carte</string>
+    <string name="supprJeu">Supprimer Jeu De Cartes</string>
+    <string name="authority">com.example.trancoso.flashcard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
